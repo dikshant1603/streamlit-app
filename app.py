@@ -3,7 +3,7 @@
   {
    "cell_type": "code",
    "execution_count": 7,
-   "id": "30796896",
+   "id": "936c8982",
    "metadata": {},
    "outputs": [
     {
@@ -172,14 +172,6 @@
     "    common_positive_words = get_common_words(positive_words)\n",
     "    st.write(common_positive_words)\n"
    ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "id": "d823c06e",
-   "metadata": {},
-   "outputs": [],
-   "source": []
   }
  ],
  "metadata": {

@@ -131,9 +131,11 @@ elif option == "Detailed Review":
     st.subheader("Common Words in Negative Reviews")
     negative_words = ' '.join(cleaned_reviews_df[cleaned_reviews_df['Sentiment_Category'] == 'Negative']['Text_Review'])
     common_negative_words = get_common_words(negative_words)
-    st.write(common_negative_words)
+    common_negative_df = pd.DataFrame(common_negative_words, columns=["Word", "Frequency"])
+    st.table(common_negative_df)
     
     st.subheader("Common Words in Positive Reviews")
     positive_words = ' '.join(cleaned_reviews_df[cleaned_reviews_df['Sentiment_Category'] == 'Positive']['Text_Review'])
     common_positive_words = get_common_words(positive_words)
-    st.write(common_positive_words)
+    common_positive_df = pd.DataFrame(common_positive_words, columns=["Word", "Frequency"])
+    st.table(common_positive_df)
